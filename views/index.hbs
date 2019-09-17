@@ -1,1 +1,22 @@
-<h2>Index </h2>
+<h2>List of todos:  </h2>
+
+{{#if todos.length}}
+<ul class='todos'>
+    {{#each todos}}
+    <li>
+        <label>
+            {{#if completed}}
+                <input type='checkbox' checked>
+                <span class='completed'>{{title}}</span>
+            {{else}}
+                <input type='checkbox'>
+                <span>{{title}}</span>
+            {{/if}}
+            <button>save</button>
+        </label>
+    </li>
+    {{/each}}
+</ul>
+{{else}}
+    <p>empty todo</p>
+{{/if}}

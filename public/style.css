@@ -1,0 +1,11 @@
+body {
+
+}
+
+ul.todos li{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(156,39,176,.2),#fff);
+    width: 40%;
+}
